@@ -1,0 +1,12 @@
+<div class="ui icon {{type}} message">
+    <i class="{{icon}} icon"></i>
+    <div class="content">
+        <div class="header">
+            {{header}}
+        </div>
+        {{message}}
+        {{% for bt in buttons %}}
+        <div class="ui button {{bt[style]}}">{{bt[value]}}</div>
+        {% endfor %}
+    </div>
+</div>
