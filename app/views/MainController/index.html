@@ -1,0 +1,84 @@
+<h1>MainController</h1>
+
+<div class="ui olive segment">
+    <div class="ui two columns grid">
+        <div class="column">
+            <div class="ui header">
+                <i class="ui university icon"></i>
+                <div class="content">
+                    {{byId}}
+                    <div class="sub header">Votre organisation</div>
+                </div>
+            </div>
+        </div>
+        <div class="column right aligned">
+            <a id="back-to-index" style="display: none;" href="" data-target="#page-container" class="ui black button active"><i class="caret square left outline icon"></i>Retour</a>
+        </div>
+    </div>
+</div>
+
+<div id="orga-index">
+    <div class="ui two column grid">
+        <div class="column">
+            <div class="ui attached segment"><i class="users icon"></i> Utilisateurs</div>
+            <div class="ui attached blue segment">
+                <div class="ui divided list">
+                    <div class="item">
+                        <a href="{{ path('new.user') }}" class="ui basic olive button" data-target="#new-user">
+                            <i class="plus icon"></i> Ajouter un utilisateur...
+                        </a>
+                        <div id="new-user" style="margin-top: 3px"></div>
+                    </div>
+
+                    <div class="item">
+                        <a href="{{ path('new.users') }}" class="ui basic olive button" data-target="#new-users">
+                            <i class="plus icon"></i> Ajouter des utilisateurs...
+                        </a>
+                        <div id="new-users"></div>
+                    </div>
+                    <div class="item">
+                        <div class="ui labeled button" tabindex="0">
+                            <a href="users/?" class="ui olive button" data-target="#orga-index">
+                                <i class="users icon"></i> Gérer les utilisateurs...
+                            </a>
+                            <span id="users-count" class="ui basic olive left pointing label">
+                                113
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="ui attached segment"><i class="people arrows icon"></i> Groupes</div>
+            <div class="ui attached green segment">
+                <div class="ui divided list">
+                    <div class="item">
+                        <a href="new/group/" class="ui basic olive button" data-target="#new-group"><i class="plus icon"></i> Ajouter un groupe...</a>
+                        <div id="new-group"></div>
+                    </div>
+                    <div class="item">
+                        <div id="dd-groupes" class="ui dropdown olive button" value="Ajouter des utilisateurs au groupe..." tabindex="0">
+
+                            <i id="icon-dd-groupes" class="icon walking"></i> <div id="text-dd-groupes" class="text">Ajouter des utilisateurs au groupe...</div> <div id="lbl-group" class="ui label basic inverted black" style="display:none"></div>
+                            <div class="menu" tabindex="-1">
+                                <a id="dd-item-dd-groupes-0" class="item" data-value="1">Personnels</a> <a id="dd-item-dd-groupes-1" class="item" data-value="2">Etudiants</a> <a id="dd-item-dd-groupes-2" class="item" data-value="12">Non affectés</a>
+                            </div>
+                        </div>
+                        <div id="add-to-group" style="margin-top: 3px"></div>
+                    </div>
+                    <div class="item">
+                        <div class="ui labeled button" tabindex="0">
+                            <a href="groups/?" class="ui olive button" data-target="#orga-index">
+                                <i class="users icon"></i> Gérer les groupes...
+                            </a>
+                            <span id="groups-count" class="ui basic olive left pointing label">
+                                3
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
