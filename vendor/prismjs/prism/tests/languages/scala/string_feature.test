@@ -1,0 +1,26 @@
+""
+"fo\"obar"
+
+"""fo"o
+bar"""
+"""fo"o
+// comment
+bar"""
+"foo /* comment */ bar"
+'foo // bar'
+
+----------------------------------------------------
+
+[
+	["string", "\"\""],
+	["string", "\"fo\\\"obar\""],
+
+	["triple-quoted-string", "\"\"\"fo\"o\r\nbar\"\"\""],
+	["triple-quoted-string", "\"\"\"fo\"o\r\n// comment\r\nbar\"\"\""],
+	["string", "\"foo /* comment */ bar\""],
+	["string", "'foo // bar'"]
+]
+
+----------------------------------------------------
+
+Checks for characters and strings.

@@ -1,0 +1,33 @@
+<div class="ui blue segment">
+    <form class="ui form" action = "{{path('orga.groupe')}}" method="post">
+        <div class="field">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Name">
+        </div>
+        <div class="field">
+            <label>Domain</label>
+            <input type="email" name="email" placeholder="email">
+        </div>
+        <div class="field">
+            <label>Aliases</label>
+            <input type="text" name="aliases" placeholder="Aliases">
+        </div>
+        <div class="field">
+            <label>Organization</label>
+            <select name="Organization">
+                {% for g in byId.groupes %}
+                    {{g}}
+                {% endfor %}
+            </select>
+
+        </div>
+
+        <div class="ui blue segment">
+            <button class="ui green button" type="submit">Valider</button>
+            <a href="{{path('orga.index')}}">
+                <button class="ui gray button" type="button">Annuler
+                </button>
+            </a>
+        </div>
+    </form>
+    </div>

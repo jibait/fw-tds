@@ -1,0 +1,30 @@
+{%  extends "OrgaController/base.html" %}
+
+{% block header %}
+
+<a href="{{ path('orga.index') }}" data-target="body"  class="ui basic inverted button">
+  <i class="warehouse icon"></i>{{byId.domain}}
+</a>
+{% endblock %}
+
+{% block body %}
+
+<div class="ui two column grid">
+<div class="column">
+<h2>Groupes</h2>
+<ul>
+  {% for g in byId.groupes %}
+    <li>{{g}}</li>
+  {% endfor %}
+</ul>
+</div>
+  <div class="column">
+<h2>Utilisateurs</h2>
+<ul>
+  {% for g in byId.users %}
+  <li>{{g}}</li>
+  {% endfor %}
+</ul>
+  </div>
+</div>
+{% endblock %}

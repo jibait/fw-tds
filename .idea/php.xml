@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/TD2-app/vendor/composer" />
+      <path value="$PROJECT_DIR$/TD2-app/vendor/czproject/git-php" />
+      <path value="$PROJECT_DIR$/TD2-app/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/TD2-app/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/TD2-app/vendor/phpmv/php-mv-ui" />
+      <path value="$PROJECT_DIR$/TD2-app/vendor/phpmv/ubiquity-webtools" />
+      <path value="$PROJECT_DIR$/TD2-app/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/TD2-app/vendor/phpmv/ubiquity-dev" />
+      <path value="$PROJECT_DIR$/TD2-app/vendor/phpmv/ubiquity-debug" />
+      <path value="$PROJECT_DIR$/TD2-app/vendor/phpmv/ubiquity-attributes" />
+      <path value="$PROJECT_DIR$/TD2-app/vendor/phpmv/ubiquity" />
+      <path value="$PROJECT_DIR$/TD2-app/vendor/frameworks/jquery" />
+      <path value="$PROJECT_DIR$/TD2-app/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/TD2-app/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/TD2-app/vendor/prismjs/prism" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />
+</project>
