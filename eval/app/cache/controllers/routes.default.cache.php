@@ -1,0 +1,2 @@
+<?php
+return array("/_default/"=>["controller"=>"controllers\\StoreController","action"=>"index","parameters"=>[],"name"=>"home","cache"=>false,"duration"=>0],"/parcourir/"=>["controller"=>"controllers\\StoreController","action"=>"getAllProducts","parameters"=>[],"name"=>"store.allProducts","cache"=>false,"duration"=>0],"/section/(\\d+)/"=>["get"=>["controller"=>"controllers\\StoreController","action"=>"getSections","parameters"=>[0],"name"=>"store.section","cache"=>false,"duration"=>0]]);

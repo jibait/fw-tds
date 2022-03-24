@@ -1,0 +1,26 @@
+<h2 class="ui header dividing teal">
+    Section
+    <div class="sub header">{{ section.name }}</div>
+</h2>
+
+<div class="ui three cards">
+    {% for p in products %}
+    <div class="card">
+        <div class="image">
+            {{ img('store/' ~ p.image ~ '.jpg' ) }}
+        </div>
+        <div class="content">
+            <div class="header">{{ p.name }}</div>
+            <div class="meta">
+                <span>{{ p.price }} euros</span>
+            </div>
+        </div>
+        <div class="extra content">
+            <a href="{{ path('store.toCart', [p.id]) }}" class="ui olive bottom attached button">
+                <i class="icon plus"></i>
+                To cart
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>

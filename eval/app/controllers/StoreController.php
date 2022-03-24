@@ -25,10 +25,10 @@ class StoreController extends \controllers\ControllerBase{
         return $products;
     }
 
-    #[Get('/section/{idSection}', name: 'store.section')]
+    #[Get('/section/{id}', name: 'store.section')]
     public function getSections(int $id) {
         $section = DAO::getById(Section::class, $id);
-        $products = DAO::getAll(Product::class, $section);
+        $products = $section->getProducts();
         $this->loadView("@activeTheme/StoreController/section.html", ['section'=>$section,'products'=>$products]);
 
     }

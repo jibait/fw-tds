@@ -13,7 +13,7 @@
                 <p>{{ s.description }}</p>
             </div>
         </div>
-        <a href="{{ path('store.Section', [section.id]) }}" class="ui grey bottom attached button">
+        <a href="{{ path('store.section', [s.id]) }}" class="ui grey bottom attached button">
             <i class="icon plus"></i>
             Consulter produits ({{s|length}})...
         </a>
