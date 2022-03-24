@@ -19,7 +19,27 @@
 			<div class="ui container">
 				<div class="ui secondary inverted menu">
 					<a href="/" class="active item">Home</a>
-					<div class="item">{{ _self }}</div>
+					<div class="right menu">
+						<div class="ui labeled button" tabindex="0">
+							<div class="ui inverted olive button">
+								<i class="cart icon"></i>
+								{% if cart is defined %}
+								{{ cart.count }}
+								{% else %}
+								0
+								{% endif %}
+							</div>
+							<a class="ui white left pointing label">
+								{% if cart is defined %}
+								{{ cart.price }} €
+								{% for p in Product %}
+								{% endfor %}
+								{% else %}
+								0 €
+								{% endif %}
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</header>

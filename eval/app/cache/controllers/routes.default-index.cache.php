@@ -1,2 +1,2 @@
 <?php
-return array("section"=>["/section/(\\d+)/"]);
+return array("section"=>["/section/(.+?)/"],"cart"=>["/cart/(.+?)/(.+?)/"]);
