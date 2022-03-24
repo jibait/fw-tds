@@ -1,0 +1,22 @@
+<div class="item">
+    <a id="btnParcourir" href="{{ path('store.allProducts') }}" class="ui fluid button olive">
+        Parcourir le store ({{ products|length }} produits)
+    </a>
+</div>
+<div class="ui divider"></div>
+<div class="ui three cards">
+    {% for s in sections %}
+    <div class="card">
+        <div class="content">
+            <div class="header">{{ s.name }}</div>
+            <div class="description">
+                <p>{{ s.description }}</p>
+            </div>
+        </div>
+        <a href="{{ path('store.Section', [section.id]) }}" class="ui grey bottom attached button">
+            <i class="icon plus"></i>
+            Consulter produits ({{s|length}})...
+        </a>
+    </div>
+    {% endfor %}
+</div>
