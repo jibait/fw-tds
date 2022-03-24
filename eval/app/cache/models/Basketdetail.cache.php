@@ -1,0 +1,2 @@
+<?php
+return array("#tableName"=>"basketdetail","#primaryKeys"=>false,"#manyToOne"=>[],"#fieldNames"=>["idBasket"=>"idBasket","idProduct"=>"idProduct","quantity"=>"quantity"],"#memberNames"=>["idBasket"=>"idBasket","idProduct"=>"idProduct","quantity"=>"quantity"],"#fieldTypes"=>["idBasket"=>"int(11)","idProduct"=>"int(11)","quantity"=>"int(11)"],"#nullable"=>[],"#notSerializable"=>[],"#transformers"=>[],"#accessors"=>["idBasket"=>"setIdBasket","idProduct"=>"setIdProduct","quantity"=>"setQuantity"]);

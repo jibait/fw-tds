@@ -1,0 +1,2 @@
+<?php
+return array("#tableName"=>"associatedproduct","#primaryKeys"=>false,"#manyToOne"=>[],"#fieldNames"=>["idProduct"=>"idProduct","idAssoProduct"=>"idAssoProduct"],"#memberNames"=>["idProduct"=>"idProduct","idAssoProduct"=>"idAssoProduct"],"#fieldTypes"=>["idProduct"=>"int(11)","idAssoProduct"=>"int(11)"],"#nullable"=>[],"#notSerializable"=>[],"#transformers"=>[],"#accessors"=>["idProduct"=>"setIdProduct","idAssoProduct"=>"setIdAssoProduct"]);

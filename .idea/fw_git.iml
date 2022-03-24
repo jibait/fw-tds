@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/eval/vendor/phpmv/php-mv-ui" />
+      <excludeFolder url="file://$MODULE_DIR$/eval/vendor/phpmv/ubiquity-webtools" />
+      <excludeFolder url="file://$MODULE_DIR$/eval/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/eval/vendor/phpmv/ubiquity-dev" />
+      <excludeFolder url="file://$MODULE_DIR$/eval/vendor/phpmv/ubiquity-debug" />
+      <excludeFolder url="file://$MODULE_DIR$/eval/vendor/phpmv/ubiquity-attributes" />
+      <excludeFolder url="file://$MODULE_DIR$/eval/vendor/phpmv/ubiquity" />
+      <excludeFolder url="file://$MODULE_DIR$/eval/vendor/czproject/git-php" />
+      <excludeFolder url="file://$MODULE_DIR$/eval/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/eval/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/eval/vendor/twig/twig" />
+      <excludeFolder url="file://$MODULE_DIR$/eval/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/eval/vendor/prismjs/prism" />
+      <excludeFolder url="file://$MODULE_DIR$/eval/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/eval/vendor/frameworks/jquery" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
