@@ -27,10 +27,10 @@ class StoreController extends \controllers\ControllerBase{
         parent::initialize();
     }
 
-    #[Route('/parcourir', name: 'store.allProducts')]
+    #[Route('/allProducts', name: 'store.allProducts')]
     public function getAllProducts() {
         $products = DAO::getAll(Product::class);
-        return $products;
+        $this->loadView("@activeTheme/StoreController/section.html", ['products'=>$products]);
     }
 
     #[Route('/section/{id}', name: 'store.section')]
